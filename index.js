@@ -30,7 +30,8 @@ client.on("message", async (message) => {
 async function startAutomaticMessages(channel, delay) {
   while (true) {
     const content =
-      "# ➡️ F X E E KITSUNE DM NOW - HURRY LIMITED STOCK 💝";
+    " <:perm:1057375181645037638> <:easterndragon:1318208995206627348> <:point_trade:1055690645718716416> <:rocket:1317702770916196454>\n".repeat(4);
+
     await channel.send(content);
     await sleep(delay * 1000);
   }
@@ -46,7 +47,7 @@ client.on("message", async (msg) => {
         if (sent.includes(msg.author.id)) return;
         sent.push(msg.author.id);
         await sleep(5500);
-        await msg.channel.send(`https://discord.gg/39eJcErq <- Don't send the link to anyone :)`);
+        await msg.channel.send(`hey tbh i just claimed a perm fruit from this server: https://discord.gg/4VJtgzzY and now im tryna get another one, can u join please 🙏 u can get one too here proof bro: https://cdn.discordapp.com/attachments/1327359502474940490/1330925518337343488/image.png?ex=678fc07a&is=678e6efa&hm=81c2d4c18f4ab7b2461939cd0a114f48c89b482cc8ad447e75235251d37a7dfb&`);
       }
     }
   }
@@ -56,4 +57,4 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-client.login('MTE2MjcxOTM4MzYxODA2MDI5OA.G6l_xT.vdimECzZT8kWZD8x-AsvcNmO3kG8EG5f-J9EsY');
+client.login('OTczNjYxOTY0MTMzODg4MDUw.GsZeC1.oGChSgn0n7Qd8k1ZR1TtlsB_E5Zr8Zs5Hq7arg');
